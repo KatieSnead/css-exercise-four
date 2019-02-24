@@ -3,63 +3,79 @@
 }
 
 body {
-  background-color: #dadada;
-  font-size: 10px;
+  background-color: #E8E8E9;
+  font-size: 20px;
+  font-family: serif;
 }
-.emphasis {
-  font-size: 1.5em;
-  letter-spacing: 2px;
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+div {
+  display: block;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+.container > h1 {
+  font-family: sans-serif;
+  font-size: 65%;
+  letter-spacing: .15em;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  text-align: center;
   text-transform: uppercase;
 }
-.container {
-  background-color: #dbd9db;
-  width: 100%;
-  font-size: 1.5em;
-  padding: 50px 50px;
-  text-align: center;
+
+.preview {
+  height: 300px;
 }
-.Name_Baku, .Name_Rome, .Name_Madrid, .Name_London  {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  font-size: 1.3em;
+
+.preview h1 {
+  padding-left: 10%;
+  padding-top: 10%;
 }
-.preview_baku, .preview_london, .preview_madrid, .preview_rome {
-   position: relative;
-   text-align: left;
-   margin-top: 1%;
-}
-@media screen and (min-width: 575px) {
- .preview_london, .preview_baku  {
-   margin: 1%;
-   width: 48%;
-   height: 48%;
-   float: left;
-}
-.preview_rome, .preview_madrid {
-  margin: 1%;
-  width: 48%;
-  height: 48%;
-  float: right;
-}
-img {
-  max-width: 100%;
-  min-width: 316px;
-  min-height: 225px;
-  max-height: 100%;
+
+.baku {
+  background: url(../images/baku.jpg);
+  background-size: cover;
  }
+
+.london {
+  background: url(../images/london.png);
+  background-size: cover;
 }
-@media screen and (min-width: 991px){
- .preview_baku, .preview_london, .preview_madrid, .preview_rome  {
-   margin: 0.5%;
-   width: 24%;
-   height: 24%;
-   float: left;
- }
-  img {
-   max-width: 100%;
-   min-width: 355px;
-   min-height: 246px;
-   max-height: 100%;
-   }
+
+.madrid {
+  background: url(../images/madrid.jpg);
+  background-size: cover;
+}
+
+.rome {
+  background: url(../images/rome.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: 575px){
+  .container {
   }
+  .preview {
+      display: inline-block;
+      height: 200px;
+      width: 40%;
+    }
+}
+
+@media screen and (min-width: 991px){
+  .container {
+  }
+
+  .preview {
+    display: inline-block;
+    margin: 1%;
+    width: 20%;
+    height: 150px;
+  }
+}
