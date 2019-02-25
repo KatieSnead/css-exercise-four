@@ -71,12 +71,24 @@ div {
    margin: 1%;
    width: 48%;
  }
+ img {
+  max-width: 100%;
+  min-width: 316px;
+  min-height: 225px;
+  max-height: 100%;
+ }
 }
 
 @media screen and (min-width: 991px){
  .preview {
    display: inline-block;
    margin: 1%;
-   width: 22%;
+   width: 20%;
  }
+ img {
+  max-width: 100%;
+  min-width: 355px;
+  min-height: 246px;
+  max-height: 100%;
+  }
 }
